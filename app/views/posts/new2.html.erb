@@ -1,0 +1,9 @@
+<h1>Add new post</h1>
+
+<%= form_tag(posts_path, method: "post") do %>
+  <%= label_tag(:url, "Url:") %>
+  <%= text_field_tag(:url) %>
+  <%= label_tag(:description, "Description:") %>
+  <%= text_area_tag(:description) %>
+  <%= submit_tag("Submit") %>
+<% end %>
